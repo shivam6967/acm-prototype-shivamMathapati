@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Circles</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+      const sangliLocation = { lat: 16.94497556460926, lng: 74.40963596421308 };
+      const otherCityLocation = { lat: 16.860700585865708, lng: 74.59996368265448 };
+      // const newLocation = { lat: /* New Location 1 Latitude */, lng: /* New Location 1 Longitude */ };
+
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: sangliLocation,
+          mapTypeId: "terrain",
+        });
+
+        // Construct the circle for Sangli.
+        const sangliCircle = new google.maps.Circle({
+          strokeColor: "orange",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "orange",
+          fillOpacity: 0.35,
+          map: map,
+          center: sangliLocation,
+          radius: 2000, // Specify the radius in meters
+        });
+
+        // Construct the circle for the other city (red circle).
+        const otherCityCircle = new google.maps.Circle({
+          strokeColor: "red",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "red",
+          fillOpacity: 0.35,
+          map: map,
+          center: otherCityLocation,
+          radius: 2000, // Specify the radius in meters
+        });
+
+        // Construct filled circles for new locations.
+      //   newLocation.forEach(location => {
+      //     new google.maps.Circle({
+      //       strokeColor: "blue",
+      //       strokeOpacity: 0.8,
+      //       strokeWeight: 2,
+      //       fillColor: "blue",
+      //       fillOpacity: 0.35,
+      //       map: map,
+      //       center: location,
+      //       radius: 1000, // Specify the radius in meters
+      //     });
+      //   });
+      // }
+      
+      window.initMap = initMap;
+      }
+    </script>
+    <style>
+      #map {
+        height: 100%;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMQyzTeRhCYJ9iGhvMIAsJcuH4TYNEvLQ&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>

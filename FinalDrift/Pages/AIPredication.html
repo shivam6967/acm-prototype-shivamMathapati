@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="utf-8">
+  <title>AI Predication Chart</title>
+ 
+  <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
+
+  <link rel="stylesheet" href="../CSS/AIPredication.css">
+
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+  <div class="ai-outbreak-pre">
+
+    <div class="medical-shortage-predication">
+      
+      <div class="medical-shortage-heading">
+        AI for Predicating the Shortage of Medical Equipments
+      </div>
+
+     
+      <div class="medical-predication-table-with-hospital-name">
+
+        <div class="seperating-line upper-line" ></div>
+
+        <div class="cityName">
+         Medical Shortage | Ashta Hospital |
+        </div>
+
+        <div class="seperating-line upper-line"></div>
+        
+        <div class="medical-body-name-heading">
+          District Hospital Ashta , District Sangli 416416
+        </div>  
+
+        <table>
+          
+          <tr id="row1">
+            <th>Medical_Supplies</th>
+            <th>Medical_Equipments</th>
+            <th>Staffing_Levels</th>
+            <th>PPE</th>
+            <th>Oxygen_Supply</th>
+            <th>Blood</th>
+            <th>Pharmaceuticals</th>
+           
+          </tr>
+          <tr id="row2">
+              <td><div class="shortage">Shortage Predicted</div></td>
+              <td><div class="shortage">Shortage Predicted</div></td>
+              <td><div class="shortage">Shortage Predicted</div></td>
+              <td><div class="shortage">Shortage Predicted</div></td>
+              <td><div class="stock-full">Stock Full</div></td>
+              <td><div class="stock-full">Stock Full</div></td>
+              <td><div class="stock-full">Stock Full</div></td>
+          </tr>
+        
+          <button class="send-data-btn" id="first-send">Send Data</button>
+      
+
+       </table>
+
+       
+       
+
+       <div class="seperating-line"></div>
+
+
+       
+
+       <div class="medical-body-name-heading">
+        Krishna Hospital Ashta , District Sangli 416416
+      </div>
+       
+      
+
+      <table>
+        <tr>
+          <th>Medical Supplies</th>
+          <th>Medical Equipments</th>
+          <th>Staffing Levels</th>
+          <th>PPE</th>
+          <th>Oxygen Supply</th>
+          <th>Blood</th>
+          <th>Pharmaceuticals</th>
+         
+        </tr>
+        <tr>
+            <td><div class="stock-full">Stock Full</div></td>
+            <td><div class="stock-full">Stock Full</div></td>
+            <td><div class="shortage">Shortage Predicted</div></td>
+            <td><div class="shortage">Shortage Predicted</div></td>
+            <td><div class="stock-full">Stock Full</div></td>
+            <td><div class="shortage">Shortage Predicted</div></td>
+            <td><div class="shortage">Shortage Predicted</div></td>
+          </tr>
+      
+  
+          <button class="send-data-btn">Send Data</button>
+
+    </table>
+
+    <div class="seperating-line"></div>
+
+    <div class="medical-body-name-heading">
+      Ashwin Hospital Ashta , Distrct Sangli 416416  
+    </div>
+
+
+    <table>
+    
+      <tr>
+        <th>Medical Supplies</th>
+        <th>Medical Equipments</th>
+        <th>Staffing Levels</th>
+        <th>PPE</th>
+        <th>Oxygen Supply</th>
+        <th>Blood</th>
+        <th>Pharmaceuticals</th>
+       
+      </tr>
+      <tr>
+          <td><div class="stock-full">Stock Full</div></td>
+          <td><div class="stock-full">Stock Full</div></td>
+          <td><div class="stock-full">Stock Full</div></td>
+          <td><div class="stock-full">Stock Full</div></td>
+          <td><div class="shortage" >Shortage Predicted</div></td>
+          <td><div class="shortage">Shortage Predicted</div></td>
+          <td><div class="stock-full">Stock Full</div></td>
+      </tr>
+    
+      <button class="send-data-btn">Send Data</button>
+        
+  </table>
+
+
+  <div class="medical-body-name-heading">
+    Kadam Hospital Ashta , District-Sangli 416416 
+  </div>
+
+  <table>
+  
+    <tr>
+      <th>Medical Supplies</th>
+      <th>Medical Equipments</th>
+      <th>Staffing Levels</th>
+      <th>PPE</th>
+      <th>Oxygen Supply</th>
+      <th>Blood</th>
+      <th>Pharmaceuticals</th>
+     
+    </tr>
+    <tr>
+        <td><div class="shortage">Shortage Predicted</div></td>
+        <td><div class="shortage">Shortage Predicted</div></td>
+        <td><div class="stock-full">Stock Full</div></td>
+        <td><div class="stock-full">Stock Full</div></td>
+        <td><div class="shortage" >Shortage Predicted</div></td>
+        <td><div class="shortage">Shortage Predicted</div></td>
+        <td><div class="shortage">Shortage Predicted</div></td>
+    </tr>
+  
+    <button class="send-data-btn">Send Data</button>
+      
+</table>
+
+
+
+
+
+  <div class="chart-section-predication">
+
+    <div class="chartOne">
+      <canvas id="myChartFour" ></canvas>
+    </div>
+    
+
+    <div class="chartTwo">
+      <canvas id="myChartFive" ></canvas>
+    </div>
+
+    <div class="chartThree">
+      <canvas id="myChartSix" ></canvas>
+    </div>
+   
+  </div>
+
+
+
+  <div class="seperating-line upper-line" ></div>
+
+        <div class="cityName">
+         Medical Shortage | Sangli Hospital
+        </div>
+
+  <div class="seperating-line upper-line"></div>
+
+
+
+  <div class="medical-body-name-heading">
+    Kadam Hospital Vishrambag , Sangli 416416 
+  </div>
+
+  <table>
+  
+    <tr>
+      <th>Medical Supplies</th>
+      <th>Medical Equipments</th>
+      <th>Staffing Levels</th>
+      <th>PPE</th>
+      <th>Oxygen Supply</th>
+      <th>Blood</th>
+      <th>Pharmaceuticals</th>
+     
+    </tr>
+    <tr>
+        <td><div class="stock-full">Stock Full</div></td>
+        <td><div class="shortage">Shortage Predicted</div></td>
+        <td><div class="shortage">Shortage Predicted</div></td>
+        <td><div class="stock-full">Stock Full</div></td>
+        <td><div class="shortage" >Shortage Predicted</div></td>
+        <td><div class="shortage">Shortage Predicted</div></td>
+        <td><div class="stock-full">Stock Full</div></td>
+    </tr>
+  
+      
+</table>
+
+<div class="seperating-line"></div>
+
+
+
+
+<div class="medical-body-name-heading">
+  Kulkarni Hospital Vijaynagar , Sangli 416416
+</div>
+
+<table>
+  
+  <tr>
+    <th>Medical Supplies</th>
+    <th>Medical Equipments</th>
+    <th>Staffing Levels</th>
+    <th>PPE</th>
+    <th>Oxygen Supply</th>
+    <th>Blood</th>
+    <th>Pharmaceuticals</th>
+   
+  </tr>
+  <tr>
+      <td><div class="stock-full">Stock Full</div></td>
+      <td><div class="shortage">Shortage Predicted</div></td>
+      <td><div class="shortage">Shortage Predicted</div></td>
+      <td><div class="stock-full">Stock Full</div></td>
+      <td><div class="shortage" >Shortage Predicted</div></td>
+      <td><div class="shortage">Shortage Predicted</div></td>
+      <td><div class="stock-full">Stock Full</div></td>
+  </tr>
+
+    
+</table>
+<div class="seperating-line"></div>
+    
+<div class="medical-body-name-heading">
+  District Hospital , Sangli 416416 
+</div>
+
+<table>
+
+  <tr>
+    <th>Medical Supplies</th>
+    <th>Medical Equipments</th>
+    <th>Staffing Levels</th>
+    <th>PPE</th>
+    <th>Oxygen Supply</th>
+    <th>Blood</th>
+    <th>Pharmaceuticals</th>
+   
+  </tr>
+  <tr>
+      <td><div class="stock-full">Stock Full</div></td>
+      <td><div class="shortage">Shortage Predicted</div></td>
+      <td><div class="shortage">Shortage Predicted</div></td>
+      <td><div class="stock-full">Stock Full</div></td>
+      <td><div class="shortage" >Shortage Predicted</div></td>
+      <td><div class="shortage">Shortage Predicted</div></td>
+      <td><div class="stock-full">Stock Full</div></td>
+  </tr>
+
+    
+</table>
+
+
+  
+      <div class="chart-section-predication">
+
+        <div class="chartOne">
+          <canvas id="myChartOne" ></canvas>
+        </div>
+        
+
+        <div class="chartTwo">
+          <canvas id="myChartTwo" ></canvas>
+        </div>
+
+        <div class="chartThree">
+          <canvas id="myChartThree" ></canvas>
+        </div>
+       
+      </div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+  <script>
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    var myConfig = {
+      "type": "mixed",
+      "title": {
+        "text": ""
+      },
+      "scale-x": {
+        "labels": ["Start", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "End"],
+        "label": {
+          "text": "scale-x"
+        }
+      },
+      "scale-y": {
+        "values": "0:200:50",
+        "label": {
+          "text": "scale-y"
+        }
+      },
+      "scale-y-2": {
+        "values": "0:100:25",
+        "label": {
+          "text": "scale-y-2"
+        }
+      },
+      "series": [{
+          "type": "bar",
+          "scales": "scale-x,scale-y",
+          "values": [
+            34, 30, 36, 29, 25, 33, 35, 31, 30, 28,
+            37, 40, 35, 33, 26, 31, 33, 29, 30, 34,
+            33, 25, 15, 23, 41, 29, 17, 29, 12, 39
+          ],
+          "stacked": true,
+          "stack": 1,
+          "bar-width": "80%"
+        },
+        {
+          "type": "bar",
+          "scales": "scale-x,scale-y",
+          "values": [
+            30, 34, 15, 29, 31, 20, 25, 39, 35, 22,
+            26, 27, 31, 34, 30, 32, 29, 24, 21, 34,
+            14, 21, 10, 24, 18, 29, 33, 20, 30, 19
+          ],
+          "stacked": true,
+          "stack": 1,
+          "bar-width": "80%"
+        },
+        {
+          "type": "bar",
+          "scales": "scale-x,scale-y",
+          "values": [
+            3, 5, 2, 1, 9, 7, 6, 4, 5, 2,
+            4, 3, 8, 5, 7, 9, 1, 2, 6, 4,
+            7, 1, 9, 3, 3, 5, 2, 5, 3, 4
+          ],
+          "stacked": true,
+          "stack": 1,
+          "bar-width": "80%"
+        },
+        {
+          "type": "line",
+          "scales": "scale-x,scale-y-2",
+          "values": [
+            75, 81, 73, 69, 79, 83, 92, 74, 68, 78,
+            83, 76, 65, 78, 72, 82, 78, 86, 73, 67,
+            74, 61, 89, 74, 70, 80, 63, 88, 71, 80
+          ],
+          "marker": {
+            "size": 3
+          }
+        },
+        {
+          "type": "line",
+          "scales": "scale-x,scale-y-2",
+          "values": [
+            61, 75, 78, 65, 83, 79, 91, 87, 76, 91,
+            85, 76, 83, 98, 67, 87, 76, 68, 85, 73,
+            83, 95, 71, 84, 90, 88, 73, 82, 62, 90
+          ],
+          "marker": {
+            "size": 3
+          }
+        }
+      ]
+    };
+ 
+    zingchart.render({
+      id: 'myChart',
+      data: myConfig,
+      height: "100%",
+      width: "100%"
+    });
+
+
+    // Table Charts :: 
+
+    const xValuesOne = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChartOne", {
+  type: "line",
+  data: {
+    labels: xValuesOne,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    }, { 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+// Chart Two 
+
+
+const xValuesTwo = [50,60,70,80,90,100,110,120,130,140,150];
+const yValuesTwo = [7,8,8,9,9,9,10,11,14,14,15];
+
+new Chart("myChartTwo", {
+  type: "line",
+  data: {
+    labels: xValuesTwo,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValuesTwo
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+
+// Chart Three 
+
+var xValuesThree = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValuesThree = [55, 49, 44, 24, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChartThree", {
+  type: "bar",
+  data: {
+    labels: xValuesThree,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValuesThree
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+
+
+
+ // Table Charts Phase Two :: 
+
+ const xValuesFour = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChartFour", {
+  type: "line",
+  data: {
+    labels: xValuesFour,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    }, { 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+// Chart Two 
+
+
+const xValuesFive = [50,60,70,80,90,100,110,120,130,140,150];
+const yValuesFive = [7,8,8,9,9,9,10,11,14,14,15];
+
+new Chart("myChartFive", {
+  type: "line",
+  data: {
+    labels: xValuesFive,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValuesFive
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+
+// Chart Three 
+
+var xValuesSix = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValuesSix = [55, 49, 44, 24, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChartSix", {
+  type: "bar",
+  data: {
+    labels: xValuesSix,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValuesSix
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+</script>
+<script src="../JavaScript/Resource_prediction.js"></script>
+</body>
+ 
+</html>

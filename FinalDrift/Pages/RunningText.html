@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <style>
+
+
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 10px;
+}
+
+.RightToLeft {
+  animation: RightToLeft 10s infinite linear;
+}
+
+@keyframes  RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+ </style>
+ <body>
+ 
+    <div class="scroll">
+      <div class="RightToLeft">
+        <p>"Attention : There are Limitied bed Availability at Hospital in Ashta City ,</p>
+        <p>Please consider seeking Medical Assistance in Neghboring Cities with more Bed Capacity </p>
+        <p>Your Understanding is Crucial in ensuring optimal Healthcare for all , Thank You" </p>
+      </div>
+    </div>
+  
+ </body>
+ </html>

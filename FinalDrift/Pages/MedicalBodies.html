@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedicalBodies</title>
+  <link rel="stylesheet" href="../CSS/MedicalBodies.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<body>
+
+  <div class="bg-div-of-medical-bodies">
+
+
+    <div class="all-the-viewData-heading">
+      <div class="back-Button"><a href="" class="back-btn-Link">Back</a></div>
+    </div>
+
+    <div class="container-medical-bodiess">
+
+
+
+      <div class="main-sangli-tilte">
+        <h2>Beds Avaliablity in Medical Bodies of </h2>
+        <div class="cityName-div">Ashta</div>
+      </div>
+
+      <div class="area-in-the-sangli">
+        <div class="area"></div>
+        <div class="government-section">Government Bodies:- </div>
+        <div class="body-box">01</div>
+        <div class="private-section">Private Bodies:- </div>
+        <div class="body-box">02</div>
+        <div class="total-bodies">Total Number of Medical Bodies :- </div>
+        <div class="body-box">03</div>
+      </div>
+
+
+      <div class="medical-bodies-name">
+
+
+
+        <table>
+          <tr>
+            <th>Name of Medical Body</th>
+            <th>Section</th>
+            <th>Type</th>
+            <th>Total Vacant Bed</th>
+            <th>Vacancy %</th>
+            <th>Address</th>
+          </tr>
+          <tr>
+            <td>District Hospital Ashta</td>
+            <td>Government</td>
+            <td>Hospital</td>
+            <td>33</td>
+            <td>35%</td>
+            <td>Shivaji Chowk , Sangli-Kolhapur Highway , Ashta</td>
+          </tr>
+          <tr>
+            <td>Krishna Hospital Ashta</td>
+            <td>Private</td>
+            <td>Hospital + Medical</td>
+            <td>103</td>
+            <td>65%</td>
+            <td>Near ADCET College , Ashta</td>
+          </tr>
+          <tr>
+            <td>Ashwin Hospital Ashta</td>
+            <td>Private</td>
+            <td>Multinational Hospital</td>
+            <td>13</td>
+            <td>5%</td>
+            <td>Basveshwar Chowk , Bus-Stand road , Ashta</td>
+          </tr>
+
+
+        </table>
+
+      </div>
+
+
+      <div class="overall-data-conslusion">
+        <div class="conclusion-heading">Conclusion of Bed Vacancy in Ashta City</div>
+      </div>
+
+
+      <div class="attach-table-information">
+
+
+
+        <table>
+          <tr>
+            <th>Total Patients</th>
+            <th>Total Vacant Bed</th>
+            <th>Vacancy %</th>
+            <th>Major Diseases</th>
+            <th>Recover</th>
+            <th>Death</th>
+            <th>Recovery Rate</th>
+            <th>Death Rate</th>
+          </tr>
+          <tr>
+            <td>2,234</td>
+            <td>208</td>
+            <td>66%</td>
+            <td>Dengue , Maleria , Cough , Fever</td>
+            <td>679</td>
+            <td>6</td>
+            <td>99%</td>
+            <td>1%</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div class="send-alert-message">
+
+
+        <div class="scroll">
+          <div class="RightToLeft">
+            <p>"Attention : There are Limitied bed Availability at Hospital in Ashta City , Please consider seeking
+              Medical Assistance in Neghboring Cities with more Bed Capacity Your Understanding is Crucial in ensuring
+              optimal Healthcare for all , Thank You" </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+
+        <div class="chart-section-predication">
+
+          <div class="chartOne">
+            <canvas id="myChartOne"></canvas>
+          </div>
+
+          <div class="chartTwo">
+            <canvas id="myChartTwo"></canvas>
+          </div>
+
+          <div class="chartThree">
+            <canvas id="myChartThree"></canvas>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+
+    <div class="container-medical-bodiess">
+
+
+
+      <div class="main-sangli-tilte">
+        <h2>Beds Avaliablity in Medical Bodies of </h2>
+        <div class="cityName-div">Sangli</div>
+      </div>
+
+      <div class="area-in-the-sangli">
+        <div class="area"></div>
+        <div class="government-section">Government Bodies:- </div>
+        <div class="body-box">01</div>
+        <div class="private-section">Private Bodies:- </div>
+        <div class="body-box">02</div>
+        <div class="total-bodies">Total Number of Medical Bodies :- </div>
+        <div class="body-box">03</div>
+      </div>
+
+
+      <div class="medical-bodies-name">
+
+        <table>
+          <tr>
+            <th>Name of Medical Body</th>
+            <th>Section</th>
+            <th>Type</th>
+            <th>Total Vacant Bed</th>
+            <th>Vacancy %</th>
+            <th>Address</th>
+          </tr>
+          <tr>
+            <td>District Hospital Sangli</td>
+            <td>Government</td>
+            <td>Hospital</td>
+            <td>33</td>
+            <td>35%</td>
+            <td>Vishrambag , Sangli-Kolhapur Highway , Sangli</td>
+          </tr>
+          <tr>
+            <td>Kadam Hospital </td>
+            <td>Private</td>
+            <td>Hospital + Medical</td>
+            <td>103</td>
+            <td>65%</td>
+            <td>Near WCE College , Sangli</td>
+          </tr>
+          <tr>
+            <td>Kulkarni Hospital Ashta</td>
+            <td>Private</td>
+            <td>Multinational Hospital</td>
+            <td>13</td>
+            <td>5%</td>
+            <td>Basveshwar Chowk , Bus-Stand road , Sangli</td>
+          </tr>
+
+
+        </table>
+
+      </div>
+
+
+      <div class="overall-data-conslusion">
+        <div class="conclusion-heading">Conclusion of Bed Vacancy in Sangli City</div>
+      </div>
+
+
+      <div class="attach-table-information">
+
+
+
+        <table>
+          <tr>
+            <th>Total Patients</th>
+            <th>Total Vacant Bed</th>
+            <th>Vacancy %</th>
+            <th>Major Diseases</th>
+            <th>Recover</th>
+            <th>Death</th>
+            <th>Recovery Rate</th>
+            <th>Death Rate</th>
+          </tr>
+          <tr>
+            <td>22,234</td>
+            <td>508</td>
+            <td>55%</td>
+            <td>Dengue , Maleria , Cough , Fever</td>
+            <td>1040</td>
+            <td>11</td>
+            <td>97%</td>
+            <td>3%</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div class="send-alert-message">
+
+
+        <div class="scroll">
+          <div class="RightToLeft">
+            <p>"Attention : There are Limitied bed Availability at Hospital in Ashta City , Please consider seeking
+              Medical Assistance in Neghboring Cities with more Bed Capacity Your Understanding is Crucial in ensuring
+              optimal Healthcare for all , Thank You" </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+
+        <div class="chart-section-predication">
+
+          <div class="chartOne">
+            <canvas id="myChartFour"></canvas>
+          </div>
+
+          <div class="chartTwo">
+            <canvas id="myChartFive"></canvas>
+          </div>
+
+          <div class="chartThree">
+            <canvas id="myChartSix"></canvas>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+    <script>
+      // Table Charts :: 
+
+      const xValuesOne = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+      new Chart("myChartOne", {
+        type: "line",
+        data: {
+          labels: xValuesOne,
+          datasets: [{
+            data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+            borderColor: "red",
+            fill: false
+          }, {
+            data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+            borderColor: "green",
+            fill: false
+          }, {
+            data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+            borderColor: "blue",
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+      });
+
+      // Chart Two 
+
+
+      const xValuesTwo = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+      const yValuesTwo = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+      new Chart("myChartTwo", {
+        type: "line",
+        data: {
+          labels: xValuesTwo,
+          datasets: [{
+            fill: false,
+            lineTension: 0,
+            backgroundColor: "rgba(0,0,255,1.0)",
+            borderColor: "rgba(0,0,255,0.1)",
+            data: yValuesTwo
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          scales: {
+            yAxes: [{
+              ticks: {
+                min: 6,
+                max: 16
+              }
+            }],
+          }
+        }
+      });
+
+      // Chart Three 
+
+      var xValuesThree = ["Italy", "France", "Spain", "USA", "Argentina"];
+      var yValuesThree = [55, 49, 44, 24, 15];
+      var barColors = ["red", "green", "blue", "orange", "brown"];
+
+      new Chart("myChartThree", {
+        type: "bar",
+        data: {
+          labels: xValuesThree,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValuesThree
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          title: {
+            display: true,
+            text: "World Wine Production 2018"
+          }
+        }
+      });
+
+
+
+      // Table Charts Phase Two :: 
+
+      const xValuesFour = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+      new Chart("myChartFour", {
+        type: "line",
+        data: {
+          labels: xValuesFour,
+          datasets: [{
+            data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+            borderColor: "red",
+            fill: false
+          }, {
+            data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+            borderColor: "green",
+            fill: false
+          }, {
+            data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+            borderColor: "blue",
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+      });
+
+      // Chart Two 
+
+
+      const xValuesFive = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+      const yValuesFive = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+      new Chart("myChartFive", {
+        type: "line",
+        data: {
+          labels: xValuesFive,
+          datasets: [{
+            fill: false,
+            lineTension: 0,
+            backgroundColor: "rgba(0,0,255,1.0)",
+            borderColor: "rgba(0,0,255,0.1)",
+            data: yValuesFive
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          scales: {
+            yAxes: [{
+              ticks: {
+                min: 6,
+                max: 16
+              }
+            }],
+          }
+        }
+      });
+
+      // Chart Three 
+
+      var xValuesSix = ["Italy", "France", "Spain", "USA", "Argentina"];
+      var yValuesSix = [55, 49, 44, 24, 15];
+      var barColors = ["red", "green", "blue", "orange", "brown"];
+
+      new Chart("myChartSix", {
+        type: "bar",
+        data: {
+          labels: xValuesSix,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValuesSix
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          title: {
+            display: true,
+            text: "World Wine Production 2018"
+          }
+        }
+      });
+    </script>
+</body>
+
+</html>

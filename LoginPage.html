@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../CSS/LoginPage.css" />
+    <title>SignIn and SignUp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <div>
+              <img src="../Images/disease_outbreak_system_logo-removebg-preview.png"class="satayam-bg">
+            </div>
+            <h2 class="title">DISEASES BREAKOUT PREDITING SYSTEM</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Enter Username" required id="username"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <i id="see" onclick="see()" class="far fa-eye"></i>
+              <input type="password" id="password" placeholder="Enter Password"
+              onInput="check()" />
+            </div>
+
+
+
+
+           <div class="info-section">
+            <div id="set" >
+           <div id="count">Length : 0</div>
+           <!-- <i id="see" onclick="see()" class="far fa-eye"></i> -->
+            </div>
+              <div id="check0">
+                   <i class="far fa-check-circle"></i>  <span> Length more than 5.</span>
+              </div>
+              <div id="check1">
+                   <i class="far fa-check-circle"></i>  <span> Length less than 10.</span>
+              </div>
+              <div id="check2">
+                   <i class="far fa-check-circle"></i>  <span> Contains numerical character.</span>
+              </div>
+              <div id="check3">
+                   <i class="far fa-check-circle"></i>   <span>Contains special character.</span>
+              </div>
+              <div id="check4">
+                   <i class="far fa-check-circle"></i>  <span>Shouldn't contain spaces.</span>
+              </div>
+           </div>
+
+
+
+
+            <!-- <a href="../Pages/HomePage.html" class="link-button"><input type="submit" value="Login" class="btn solid" /></a> -->
+            <a href="../Pages/HomePage.html" id="link-btn"  class="btn solid" value="Login">Login</a>
+            <!-- <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div> -->
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Welcome to our Portal we the Team CODE4HEALTH greets Your , to Use this Protal you can Create your new Account 
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="../Images/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              If your Alrealy join with Us then you can just Login
+            </p>
+            <button class="next-button-transperent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="../Images/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="../JavaScript/LoginPage.js"></script>
+  </body>
+</html>

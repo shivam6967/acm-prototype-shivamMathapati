@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/HomePage.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script
+      nonce="undefined"
+      src="https://cdn.zingchart.com/zingchart.min.js"
+    ></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <title>HomePage</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="left-section">
+        <!-------------------------- Logo Section ---------------------------->
+
+        <div class="logo">
+          <img src="../Images/dashboard logo.png" />
+          <a href="#">Swashtya Sahayak</a>
+        </div>
+
+        <!---------------------- SideOne Navigation Bar ---------------------------->
+
+        <div class="progress-and-chart">
+          <div class="progress-section">
+            <button class="progress-button">Progress</button>
+          </div>
+
+          <div class="chart-section">
+            <button class="progress-button">Chart</button>
+          </div>
+        </div>
+
+        <!---------------- Main - Navigation - Buttons --------------->
+
+        <div class="sidebar">
+          <div class="item" id="active">
+            <i class="bx bx-home-alt-2"></i>
+            <a href="">Home</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-grid-alt"></i>
+            <a href="#">About Us</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-folder"></i>
+            <a href="../Pages/ViewData.html">View Data</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-message-square-dots"></i>
+            <a href="#">Progress Table</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-cog"></i>
+            <a href="../Pages/RiskZone.html">Show Risk Zone</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-cog"></i>
+            <a href="../Pages/MedicalBodies.html">Medical Bodies</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-cog"></i>
+            <a href="../Pages/AIPredication.html">AI Predication</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-cog"></i>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="item">
+            <i class="bx bx-cog"></i>
+            <a href="#">Help</a>
+          </div>
+        </div>
+
+        <!------------------------- Location Select Section ---------------------->
+
+        <div class="upgrade">
+          <div>
+            <h5 class="heading-select-location">Select the Location</h5>
+          </div>
+          <div class="link">
+            <!-- <a href="#">Go to <b>PRO</b></a>
+                    <i class='bx bxs-chevron-right'></i> -->
+            <select name="" id="select-box">
+              <option value="sangli">Sangli</option>
+              <option value="ashta">Ashta</option>
+            </select>
+          </div>
+        </div>
+      </aside>
+      <!----------------------   Section Number Two    -------------------------------------->
+      <main class="middle-section" id="middle-section-one">
+        <header>
+          <!-- Contact Information  -->
+
+          <!-- <div class="contact-information-nav">
+
+                  <div class="contact-info">
+                    <p>+9184514153</p>
+                  </div>
+                  
+                  <div class="contact-info">
+                    <p>Mon-Fri 9.00 AM - 5.00 PM</p>
+                  </div>
+                  <div class="contact-info">
+                    <p>Walchand Backgate , Main Chowk , Vishrambag , Sangli 416416</p>
+                  </div>
+
+                </div> -->
+        </header>
+
+        <!-- <div class="seperating-line"></div> -->
+
+        <!-- Extra Information Section : Weather , Climate , AirQuality -->
+
+        <div class="analytics">
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>Weather</h5>
+                <p>Mostly Sunny</p>
+              </div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- <i class='bx bx-map-pin'></i> -->
+            <div class="info-div">
+              <p class="extra-inforation-value">29*</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>AirQuality</h5>
+                <p>Moderate</p>
+              </div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- <i class='bx bx-user-voice'></i> -->
+            <div class="info-div" id="airQuality-index">
+              <p class="extra-inforation-value">135</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>Population</h5>
+                <p>Medium</p>
+              </div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- <i class='bx bxs-plane-land'></i> -->
+            <div class="info-div" id="population-zone">
+              <p class="extra-inforation-value">6L</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>Patients</h5>
+                <!-- <p>Orange</p> -->
+              </div>
+              <!-- <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div> -->
+            </div>
+            <!-- <i class='bx bxs-castle'></i> -->
+            <div class="info-div" id="risk-zone">
+              <p class="extra-inforation-value">508</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daily Medical News in the Sangli  -->
+
+        <div class="separator" id="daily-news-heading">
+          <div class="info">
+            <h3>Daily Medical News , Sangli , 416416</h3>
+          </div>
+        </div>
+
+        <div class="send-alert-message">
+          <div class="scroll">
+            <div class="RightToLeft">
+              <p>"Attention : The Malaria Outbreak has Predicated in Sangli</p>
+            </div>
+          </div>
+        </div>
+
+        <!------------- Daily new PhotoSection ------------>
+
+        <div class="main-photocontainer">
+          <!-- <div id="myChart" class="chart--container">
+                <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+              </div> -->
+
+          <div class="slider" class="courtImage" style="width: 100%">
+            <div class="list">
+              <div class="item">
+                <img src="../Images/sangliOne.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliTwo.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliThree.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFour.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFive.png" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliOne.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliTwo.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliThree.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFour.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFive.png" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliTwo.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliThree.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFour.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFive.png" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliTwo.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliThree.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFour.jpg" />
+              </div>
+              <div class="item">
+                <img src="../Images/sangliFive.png" />
+              </div>
+            </div>
+            <div class="buttons">
+              <button id="prev"><</button>
+              <button id="next">></button>
+            </div>
+            <ul class="dots">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <main
+        class="middle-section"
+        id="middle-section-two"
+        style="display: none"
+      >
+        <header>
+          <!-- Contact Information  -->
+
+          <!-- <div class="contact-information-nav">
+
+                  <div class="contact-info">
+                    <p>+9184514153</p>
+                  </div>
+                  
+                  <div class="contact-info">
+                    <p>Mon-Fri 9.00 AM - 5.00 PM</p>
+                  </div>
+                  <div class="contact-info">
+                    <p>Walchand Backgate , Main Chowk , Vishrambag , Sangli 416416</p>
+                  </div>
+
+                </div> -->
+        </header>
+
+        <!-- <div class="seperating-line"></div> -->
+
+        <!-- Extra Information Section : Weather , Climate , AirQuality -->
+
+        <div class="analytics">
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>Weather</h5>
+                <p>Mostly Sunny</p>
+              </div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- <i class='bx bx-map-pin'></i> -->
+            <div class="info-div">
+              <p class="extra-inforation-value">30*</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>AirQuality</h5>
+                <p>Moderate</p>
+              </div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- <i class='bx bx-user-voice'></i> -->
+            <div class="info-div" id="airQuality-index">
+              <p class="extra-inforation-value">125</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>Population</h5>
+                <p>Highly Dense</p>
+              </div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- <i class='bx bxs-plane-land'></i> -->
+            <div class="info-div" id="population-zone">
+              <p class="extra-inforation-value">51k</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="progress">
+              <div class="info">
+                <h5>Patients</h5>
+                <!-- <p>Orange</p> -->
+              </div>
+              <!-- <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div> -->
+            </div>
+            <!-- <i class='bx bxs-castle'></i> -->
+            <div class="info-div" id="risk-zone">
+              <p class="extra-inforation-value">332</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daily Medical News in the Sangli  -->
+
+        <div class="separator" id="daily-news-heading">
+          <div class="info">
+            <h3>Daily Medical News , Ashta</h3>
+          </div>
+        </div>
+
+        <div class="send-alert-message">
+          <div class="scroll">
+            <div class="RightToLeft">
+              <p>"Attention : The Malaria Outbreak has Predicated in Ashta</p>
+            </div>
+          </div>
+        </div>
+
+        <!------------- Daily new PhotoSection ------------>
+
+        <div class="main-photocontainer">
+          <!-- <div id="myChart" class="chart--container">
+                <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+              </div> -->
+
+          <div class="slider" class="courtImage" style="width: 100%">
+            <div class="list">
+              <div class="item">
+                <img src="../Images/ashtaOne.png" style="width: 700px" />
+              </div>
+              <div class="item">
+                <!-- <img src="../Images/sangliFive.png"> -->
+              </div>
+              <div class="item">
+                <!-- <img src="../Images/sliderNews.jpeg"> -->
+              </div>
+              <div class="item">
+                <!-- <img src="../Images/sliderNews.jpeg"> -->
+              </div>
+              <div class="item">
+                <!-- <img src="../Images/sliderNews.jpeg"> -->
+              </div>
+            </div>
+            <div class="buttons">
+              <button id="prev"><</button>
+              <button id="next">></button>
+            </div>
+            <ul class="dots">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+    </main>
+
+      <aside class="right-section" id="last-section-one">
+        <div class="chart-section">
+          <div class="all-charts-section">
+            <div class="chart-heading">
+              <h2>AI Outbreak Predication Chart</h2>
+
+              <div class="viewMore-btn">
+                <button class="btn-view-details">View Information</button>
+              </div>
+
+              <div class="viewMore-btn">
+                <button class="close-btn">Close</button>
+              </div>
+            </div>
+
+            <div class="charts">
+              <!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> -->
+              <canvas id="myChartThree" class="main-chart-section"></canvas>
+            </div>
+
+            <div class="progress-data-in-table" style="display: none">
+              <div class="x-y-axis-guide">
+                <div class="x-axis">
+                  X - Axis
+                  <div class="x">Number of Days</div>
+                </div>
+                <div class="y-axis">
+                  Y - Axis
+                  <div class="y">Number of Patients</div>
+                </div>
+              </div>
+
+              <table>
+                <tr>
+                  <th>Color</th>
+                  <th>Diseases</th>
+                  <th>Total Patients</th>
+                  <th>Increasing Rate</th>
+                  <th>Recover</th>
+                  <th>Death</th>
+                  <th>Recovery Rate</th>
+                  <th>Death Rate</th>
+                </tr>
+                <tr>
+                  <td><div class="red">Red</div></td>
+                  <td>Malaria</td>
+                  <td>15</td>
+                  <td>12%</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>89%</td>
+                  <td>2%</td>
+                </tr>
+                <tr>
+                  <td><div class="green">Green</div></td>
+                  <td>Dengue</td>
+                  <td>22</td>
+                  <td>22%</td>
+                  <td>12</td>
+                  <td>3</td>
+                  <td>87%</td>
+                  <td>3%</td>
+                </tr>
+                <tr>
+                  <td><div class="blue">Blue</div></td>
+                  <td>Fever</td>
+                  <td>32</td>
+                  <td>2%</td>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>96%</td>
+                  <td>0%</td>
+                </tr>
+                <tr>
+                  <td><div class="black">Black</div></td>
+                  <td>Cough</td>
+                  <td>32</td>
+                  <td>2%</td>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>96%</td>
+                  <td>0%</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="chart-heading">
+              <h2>AI Shortage Predication Chart</h2>
+
+              <div class="viewMore-btn" id="viewMore-btn-second">
+                <button class="btn-view-details">View Details</button>
+              </div>
+
+              <div class="viewMore-btn">
+                <button class="close-btn" id="close-btn-second">Close</button>
+              </div>
+            </div>
+
+            <div class="charts">
+              <!-- <canvas id="myChartThree" class="main-chart-section"></canvas> -->
+              <!-- This is the chart section of the DashBoard  -->
+              <canvas id="myChartFive"></canvas>
+            </div>
+
+            <div
+              class="progress-data-in-table"
+              id="progress-data-second"
+              style="display: none"
+            >
+              <div class="x-y-axis-guide">
+                <div class="x-axis">
+                  X - Axis
+                  <div class="x">Number of Days</div>
+                </div>
+                <div class="y-axis">
+                  Y - Axis
+                  <div class="y">Number of Patients</div>
+                </div>
+              </div>
+
+              <table>
+                <tr>
+                  <th>Color</th>
+                  <th>Diseases</th>
+                  <th>Total Patients</th>
+                  <th>Increasing Rate</th>
+                  <th>Recover</th>
+                  <th>Death</th>
+                  <th>Recovery Rate</th>
+                  <th>Death Rate</th>
+                </tr>
+                <tr>
+                  <td><div class="red">Red</div></td>
+                  <td>Malaria</td>
+                  <td>15</td>
+                  <td>12%</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>89%</td>
+                  <td>2%</td>
+                </tr>
+                <tr>
+                  <td><div class="green">Green</div></td>
+                  <td>Dengue</td>
+                  <td>22</td>
+                  <td>22%</td>
+                  <td>12</td>
+                  <td>3</td>
+                  <td>87%</td>
+                  <td>3%</td>
+                </tr>
+                <tr>
+                  <td><div class="blue">Blue</div></td>
+                  <td>Fever</td>
+                  <td>32</td>
+                  <td>2%</td>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>96%</td>
+                  <td>0%</td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- <div class="charts" id="down-Chart">
+                <canvas id="myChartThree" class="main-chart-section"></canvas>
+              </div>
+
+              <div class="charts" id="down-Chart">
+                <canvas id="myChartFour" class="main-chart-section"></canvas>
+              </div> -->
+          </div>
+
+          <!-- <div class="progress-data-in-table">
+              <table>
+                <tr>
+                  <th>Total Patients</th>
+                  <th>New Patients</th>
+                  <th>Major Diseases</th>
+                  <th>Recover</th>
+                  <th>Death</th>
+                  <th>Recovery Rate</th>
+                  <th>Death Rate</th>
+                </tr>
+                <tr>
+                  <td>134</td>
+                  <td>12</td>
+                  <td>DisOne , DisTwo , DisThree</td>
+                  <td>100</td>
+                  <td>56</td>
+                  <td>87%</td>
+                  <td>3%</td>
+                </tr>
+              
+              </table>
+            </div> -->
+        </div>
+      </aside>
+
+      <aside class="right-section" style="display: none" id="last-section-two">
+        <div class="chart-section">
+          <div class="all-charts-section">
+            <div class="chart-heading">
+              <h2>AI Outbreak Predication Chart</h2>
+
+              <div class="viewMore-btn">
+                <button class="btn-view-details" id="ashta-viewInfo">
+                  View Information
+                </button>
+              </div>
+
+              <div class="viewMore-btn">
+                <button class="close-btn" id="ashta-closeOne">Close</button>
+              </div>
+            </div>
+
+            <div class="charts">
+              <!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> -->
+              <canvas
+                id="myChartThreeAshta"
+                class="main-chart-section"
+              ></canvas>
+            </div>
+
+            <div
+              class="progress-data-in-table"
+              id="ashta-first-table"
+              style="display: none"
+            >
+              <table>
+                <tr>
+                  <th>Color</th>
+                  <th>Diseases</th>
+                  <th>Total Patients</th>
+                  <th>Increasing Rate</th>
+                  <th>Recover</th>
+                  <th>Death</th>
+                  <th>Recovery Rate</th>
+                  <th>Death Rate</th>
+                </tr>
+                <tr>
+                  <td><div class="red">Red</div></td>
+                  <td>Malaria</td>
+                  <td>15</td>
+                  <td>12%</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>89%</td>
+                  <td>2%</td>
+                </tr>
+                <tr>
+                  <td><div class="green">Green</div></td>
+                  <td>Dengue</td>
+                  <td>22</td>
+                  <td>22%</td>
+                  <td>12</td>
+                  <td>3</td>
+                  <td>87%</td>
+                  <td>3%</td>
+                </tr>
+                <tr>
+                  <td><div class="blue">Blue</div></td>
+                  <td>Fever</td>
+                  <td>32</td>
+                  <td>2%</td>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>96%</td>
+                  <td>0%</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="chart-heading">
+              <h2>AI Shortage Predication Chart</h2>
+
+              <div class="viewMore-btn">
+                <button class="btn-view-details" id="ashta-viewDetails">
+                  View Details
+                </button>
+              </div>
+
+              <div class="viewMore-btn">
+                <button class="close-btn" id="ashta-closeTwo">Close</button>
+              </div>
+            </div>
+
+            <div class="charts">
+              <!-- <canvas id="myChartThree" class="main-chart-section"></canvas> -->
+              <canvas id="myChartFiveAshta"></canvas>
+            </div>
+
+            <div
+              class="progress-data-in-table"
+              id="ashta-second-table"
+              style="display: none"
+            >
+              <table>
+                <tr>
+                  <th>Color</th>
+                  <th>Diseases</th>
+                  <th>Total Patients</th>
+                  <th>Increasing Rate</th>
+                  <th>Recover</th>
+                  <th>Death</th>
+                  <th>Recovery Rate</th>
+                  <th>Death Rate</th>
+                </tr>
+                <tr>
+                  <td><div class="red">Red</div></td>
+                  <td>Malaria</td>
+                  <td>15</td>
+                  <td>12%</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>89%</td>
+                  <td>2%</td>
+                </tr>
+                <tr>
+                  <td><div class="green">Green</div></td>
+                  <td>Dengue</td>
+                  <td>22</td>
+                  <td>22%</td>
+                  <td>12</td>
+                  <td>3</td>
+                  <td>87%</td>
+                  <td>3%</td>
+                </tr>
+                <tr>
+                  <td><div class="blue">Blue</div></td>
+                  <td>Fever</td>
+                  <td>32</td>
+                  <td>2%</td>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>96%</td>
+                  <td>0%</td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- <div class="charts" id="down-Chart">
+                <canvas id="myChartThree" class="main-chart-section"></canvas>
+              </div>
+
+              <div class="charts" id="down-Chart">
+                <canvas id="myChartFour" class="main-chart-section"></canvas>
+              </div> -->
+          </div>
+
+          <!-- <div class="progress-data-in-table">
+              <table>
+                <tr>
+                  <th>Total Patients</th>
+                  <th>New Patients</th>
+                  <th>Major Diseases</th>
+                  <th>Recover</th>
+                  <th>Death</th>
+                  <th>Recovery Rate</th>
+                  <th>Death Rate</th>
+                </tr>
+                <tr>
+                  <td>134</td>
+                  <td>12</td>
+                  <td>DisOne , DisTwo , DisThree</td>
+                  <td>100</td>
+                  <td>56</td>
+                  <td>87%</td>
+                  <td>3%</td>
+                </tr>
+              
+              </table>
+            </div> -->
+        </div>
+      </aside>
+    </div>
+
+    <script>
+      const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+      const yValues = [55, 49, 44, 24, 15];
+      const barColors = ["red", "green", "blue", "orange", "brown"];
+
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "World Wine Production 2018",
+          },
+        },
+      });
+
+      //  Pie Chart :
+
+      var xValuesPie = ["Italy", "France", "Spain", "USA", "Argentina"];
+      var yValuesPie = [55, 49, 44, 24, 15];
+      var barColorsPie = [
+        "#b91d47",
+        "#00aba9",
+        "#2b5797",
+        "#e8c3b9",
+        "#1e7145",
+      ];
+
+      new Chart("myChartTwo", {
+        type: "pie",
+        data: {
+          labels: xValuesPie,
+          datasets: [
+            {
+              backgroundColor: barColorsPie,
+              data: yValuesPie,
+            },
+          ],
+        },
+        options: {
+          title: {
+            display: true,
+            text: "World Wide Wine Production 2018",
+          },
+        },
+      });
+
+      // next Chart
+
+      const xValuesNew = [0, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+      new Chart("myChartThree", {
+        type: "line",
+        data: {
+          labels: xValuesNew,
+          datasets: [
+            {
+              data: [0, 1, 1, 2, 1, 2, 3, 4, 3, 3, 4, 5],
+              borderColor: "red",
+              fill: false,
+            },
+            {
+              data: [0, 2, 2, 1, 2, 1, 4, 1, 3, 4, 3, 2],
+              borderColor: "green",
+              fill: false,
+            },
+            {
+              data: [0, 3, 2, 2, 3, 2, 1, 2, 2, 3, 4, 4],
+              borderColor: "blue",
+              fill: false,
+            },
+            {
+              data: [0, 0, 3, 4, 3, 2, 1, 3, 4, 3, 2, 1],
+              borderColor: "black",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: [
+              {
+                ticks: {
+                  min: 0,
+                  max: 10,
+                  stepSize: 1,
+                },
+              },
+            ],
+          },
+          legend: {
+            display: false,
+          },
+        },
+      });
+
+      // chart Four
+
+      var xyValues = [
+        { x: 50, y: 7 },
+        { x: 60, y: 8 },
+        { x: 70, y: 8 },
+        { x: 80, y: 9 },
+        { x: 90, y: 9 },
+        { x: 100, y: 9 },
+        { x: 110, y: 10 },
+        { x: 120, y: 11 },
+        { x: 130, y: 14 },
+        { x: 140, y: 14 },
+        { x: 150, y: 15 },
+      ];
+
+      new Chart("myChartFour", {
+        type: "scatter",
+        data: {
+          datasets: [
+            {
+              pointRadius: 4,
+              pointBackgroundColor: "rgb(0,0,255)",
+              data: xyValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          scales: {
+            xAxes: [{ ticks: { min: 40, max: 160 } }],
+            yAxes: [{ ticks: { min: 6, max: 16 } }],
+          },
+        },
+      });
+
+      // Excellence news
+
+      ZC.LICENSE = [
+        "569d52cefae586f634c54f86dc99e6a9",
+        "b55b025e438fa8a98e32482b5f768ff5",
+      ];
+      window.feed = function (callback) {
+        var tick = {};
+        tick.plot0 = Math.ceil(350 + Math.random() * 500);
+        callback(JSON.stringify(tick));
+      };
+
+      var myConfig = {
+        type: "gauge",
+        globals: {
+          fontSize: 25,
+        },
+        plotarea: {
+          marginTop: 80,
+        },
+        plot: {
+          size: "100%",
+          valueBox: {
+            placement: "center",
+            text: "%v", //default
+            fontSize: 35,
+            rules: [
+              {
+                rule: "%v >= 700",
+                text: "%v<br>EXCELLENT",
+              },
+              {
+                rule: "%v < 700 && %v > 640",
+                text: "%v<br>Good",
+              },
+              {
+                rule: "%v < 640 && %v > 580",
+                text: "%v<br>Fair",
+              },
+              {
+                rule: "%v <  580",
+                text: "%v<br>Bad",
+              },
+            ],
+          },
+        },
+        tooltip: {
+          borderRadius: 5,
+        },
+        scaleR: {
+          aperture: 180,
+          minValue: 300,
+          maxValue: 850,
+          step: 50,
+          center: {
+            visible: false,
+          },
+          tick: {
+            visible: false,
+          },
+          item: {
+            offsetR: 0,
+            rules: [
+              {
+                rule: "%i == 9",
+                offsetX: 15,
+              },
+            ],
+          },
+          labels: [
+            "300",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "580",
+            "640",
+            "700",
+            "750",
+            "",
+            "850",
+          ],
+          ring: {
+            size: 50,
+            rules: [
+              {
+                rule: "%v <= 580",
+                backgroundColor: "#E53935",
+              },
+              {
+                rule: "%v > 580 && %v < 640",
+                backgroundColor: "#EF5350",
+              },
+              {
+                rule: "%v >= 640 && %v < 700",
+                backgroundColor: "#FFA726",
+              },
+              {
+                rule: "%v >= 700",
+                backgroundColor: "#29B6F6",
+              },
+            ],
+          },
+        },
+        refresh: {
+          type: "feed",
+          transport: "js",
+          url: "feed()",
+          interval: 1500,
+          resetTimeout: 1000,
+        },
+        series: [
+          {
+            values: [755], // starting value
+            backgroundColor: "black",
+            indicator: [10, 10, 10, 10, 0.75],
+            animation: {
+              effect: 2,
+              method: 1,
+              sequence: 4,
+              speed: 900,
+            },
+          },
+        ],
+      };
+
+      zingchart.render({
+        id: "myChart",
+        data: myConfig,
+        height: 500,
+        width: "100%",
+      });
+
+      // MedicalNews Chart
+
+      ZC.LICENSE = [
+        "569d52cefae586f634c54f86dc99e6a9",
+        "b55b025e438fa8a98e32482b5f768ff5",
+      ];
+      var myTheme = {
+        palette: {
+          line: [
+            ["#FBFCFE", "#00BAF2", "#00BAF2", "#00a7d9"] /* light blue */,
+            ["#FBFCFE", "#E80C60", "#E80C60", "#d00a56"] /* light pink */,
+            ["#FBFCFE", "#9B26AF", "#9B26AF", "#8b229d"] /* light purple */,
+            ["#FBFCFE", "#E2D51A", "#E2D51A", "#E2D51A"] /* med yellow */,
+            ["#FBFCFE", "#FB301E", "#FB301E", "#e12b1b"] /* med red */,
+            ["#FBFCFE", "#00AE4D", "#00AE4D", "#00AE4D"] /* med green */,
+          ],
+        },
+        graph: {
+          backgroundColor: "#FBFCFE",
+          title: {
+            fontFamily: "Lato",
+            fontSize: 14,
+            // border: "1px solid black",
+            padding: "15",
+            fontColor: "#1E5D9E",
+            adjustLayout: true,
+          },
+          subtitle: {
+            fontFamily: "Lato",
+            fontSize: 12,
+            fontColor: "#777",
+            padding: "5",
+          },
+          plot: {
+            backgroundColor: "#FBFCFE",
+            marker: {
+              size: 4,
+            },
+          },
+          tooltip: {
+            visible: true,
+            text: "%kl<br><span style='color:%color'>%t: </span>%v<br>",
+            backgroundColor: "white",
+            borderColor: "#e3e3e3",
+            borderRadius: "5px",
+            bold: true,
+            fontSize: "12px",
+            fontColor: "#2f2f2f",
+            textAlign: "left",
+            padding: "15px",
+            shadow: true,
+            shadowAlpha: 0.2,
+            shadowBlur: 5,
+            shadowDistance: 4,
+            shadowColor: "#a1a1a1",
+          },
+          plotarea: {
+            backgroundColor: "transparent",
+            borderRadius: "0 0 0 10",
+            borderRight: "0px",
+            borderTop: "0px",
+            margin: "dynamic",
+            borderLeft: "1px solid #1E5D9E",
+            borderBottom: "1px solid #1E5D9E",
+          },
+          scaleX: {
+            zooming: true,
+            offsetY: -20,
+            lineWidth: 0,
+            padding: 20,
+            margin: 20,
+            label: {
+              text: "Scale-X",
+            },
+            item: {
+              padding: 5,
+              fontColor: "#1E5D9E",
+              fontFamily: "Montserrat",
+              rules: [
+                {
+                  rule: "%i == 0",
+                  visible: false,
+                },
+              ],
+            },
+            tick: {
+              lineColor: "#D1D3D4",
+              rules: [
+                {
+                  rule: "%i == 0",
+                  visible: false,
+                },
+              ],
+            },
+            guide: {
+              visible: true,
+              lineColor: "#D7D8D9",
+              lineStyle: "dotted",
+              lineGapSize: "4px",
+              rules: [
+                {
+                  rule: "%i == 0",
+                  visible: false,
+                },
+              ],
+            },
+          },
+          scaleY: {
+            zooming: true,
+            lineWidth: 0,
+            label: {
+              text: "Scale-Y",
+            },
+            item: {
+              padding: "0 10 0 0",
+              fontColor: "#1E5D9E",
+              fontFamily: "Montserrat",
+              rules: [
+                {
+                  rule: "%i == 0",
+                  offsetX: 10,
+                  offsetY: 10,
+                  backgroundColor: "none",
+                },
+              ],
+            },
+            tick: {
+              lineColor: "#D1D3D4",
+              rules: [
+                {
+                  rule: "%i == 0",
+                  visible: false,
+                },
+              ],
+            },
+            guide: {
+              visible: true,
+              lineColor: "#D7D8D9",
+              lineStyle: "dotted",
+              lineGapSize: "4px",
+              rules: [
+                {
+                  rule: "%i == 0",
+                  visible: false,
+                },
+              ],
+            },
+          },
+          scrollX: {
+            bar: {
+              backgroundColor: "none",
+              borderLeft: "none",
+              borderTop: "none",
+              borderBottom: "none",
+            },
+            handle: {
+              backgroundColor: "#1E5D9E",
+              height: 5,
+            },
+          },
+          scrollY: {
+            borderWidth: 0,
+            bar: {
+              backgroundColor: "none",
+              width: 14,
+              borderLeft: "none",
+              borderTop: "none",
+              borderBottom: "none",
+            },
+            handle: {
+              borderWidth: 0,
+              backgroundColor: "#1E5D9E",
+              width: 5,
+            },
+          },
+          zoom: {
+            backgroundColor: "#1E5D9E",
+            alpha: 0.33,
+            borderColor: "#000",
+            borderWidth: 1,
+          },
+          preview: {
+            borderColor: "#1E5D9E",
+            borderWidth: 1,
+            adjustLayout: true,
+            handle: {
+              backgroundColor: "#1E5D9E",
+              borderColor: "#1E5D9E",
+            },
+            mask: {
+              backgroundColor: "#FFF",
+              alpha: 0.95,
+            },
+          },
+        },
+      };
+
+      var myConfig = {
+        type: "line",
+        title: {
+          text: "",
+        },
+        subtitle: {
+          text: "",
+        },
+        plotarea: {
+          marginTop: 10,
+          marginBottom: 80,
+        },
+        scaleX: {
+          zooming: true,
+          labels: [
+            "6/10",
+            "6/11",
+            "6/12",
+            "6/13",
+            "6/14",
+            "6/15",
+            "6/16",
+            "6/17",
+            "6/18",
+            "6/19",
+            "6/20",
+            "6/21",
+            "6/22",
+            "6/23",
+          ],
+        },
+        scaleY: {
+          zooming: true,
+        },
+        preview: {},
+        scrollX: {},
+        scrollY: {},
+        series: [
+          {
+            text: "Internal",
+            values: [6, 6, 3.5, 4.5, 4.5, 4.5, 2.5, 4.5, 4.5, 5, 5, 4, 5, 5],
+          },
+          {
+            text: "External",
+            values: [
+              4.5, 4.5, 3.5, 3.5, 3.5, 2.5, 3.5, 3.5, 2.5, 2.5, 2, 3, 3, 2,
+            ],
+          },
+          {
+            text: "Outbound",
+            values: [2.5, 1.5, 1.5, 2.5, 1.5, 1.5, 1.5, 1, 1, 1, 1, 2, 2, 3],
+          },
+        ],
+      };
+
+      zingchart.render({
+        id: "myChart",
+        data: {
+          gui: {
+            contextMenu: {
+              button: {
+                visible: true,
+                lineColor: "#2D66A4",
+                backgroundColor: "#2D66A4",
+              },
+              gear: {
+                alpha: 1,
+                backgroundColor: "#2D66A4",
+              },
+              position: "right",
+              backgroundColor: "#306EAA",
+              /*sets background for entire contextMenu*/
+              docked: true,
+              item: {
+                backgroundColor: "#306EAA",
+                borderColor: "#306EAA",
+                borderWidth: 0,
+                fontFamily: "Lato",
+                color: "#fff",
+              },
+            },
+          },
+          graphset: [myConfig],
+        },
+        height: "100%",
+        width: "100%",
+        defaults: myTheme,
+      });
+
+      // Next Charts ::
+
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          exportEnabled: true,
+          animationEnabled: true,
+          theme: "light2",
+          title: {
+            text: "AI Outbreak Predication ",
+          },
+          axisX: {
+            title: "April 2017",
+            valueFormatString: "DD MMM",
+          },
+          axisY: {
+            suffix: " °C",
+          },
+          toolTip: {
+            shared: true,
+          },
+          legend: {
+            cursor: "pointer",
+            horizontalAlign: "right",
+            itemclick: toggleDataSeries,
+          },
+          data: [
+            {
+              type: "rangeArea",
+              showInLegend: true,
+              name: "",
+              markerSize: 0,
+              yValueFormatString: "#0.## °C",
+              dataPoints: [
+                { x: new Date(2017, 0o3, 0o1), y: [5, 21] },
+                { x: new Date(2017, 0o3, 0o2), y: [7, 15] },
+                { x: new Date(2017, 0o3, 0o3), y: [7, 18] },
+                { x: new Date(2017, 0o3, 0o4), y: [9, 16] },
+                { x: new Date(2017, 0o3, 0o5), y: [10, 17] },
+                { x: new Date(2017, 0o3, 0o6), y: [8, 13] },
+                { x: new Date(2017, 0o3, 0o7), y: [6, 10] },
+                { x: new Date(2017, 0o3, 8), y: [6, 15] },
+                { x: new Date(2017, 0o3, 9), y: [6, 20] },
+                { x: new Date(2017, 0o3, 10), y: [5, 21] },
+                { x: new Date(2017, 0o3, 11), y: [6, 21] },
+                { x: new Date(2017, 0o3, 12), y: [7, 14] },
+                { x: new Date(2017, 0o3, 13), y: [7, 17] },
+                { x: new Date(2017, 0o3, 14), y: [5, 20] },
+                { x: new Date(2017, 0o3, 15), y: [7, 18] },
+                { x: new Date(2017, 0o3, 16), y: [7, 15] },
+                { x: new Date(2017, 0o3, 17), y: [8, 15] },
+                { x: new Date(2017, 0o3, 18), y: [7, 13] },
+                { x: new Date(2017, 0o3, 19), y: [7, 13] },
+                { x: new Date(2017, 0o3, 20), y: [7, 18] },
+                { x: new Date(2017, 0o3, 21), y: [6, 20] },
+                { x: new Date(2017, 0o3, 22), y: [9, 23] },
+                { x: new Date(2017, 0o3, 23), y: [9, 24] },
+                { x: new Date(2017, 0o3, 24), y: [8, 23] },
+                { x: new Date(2017, 0o3, 25), y: [12, 24] },
+                { x: new Date(2017, 0o3, 26), y: [10, 21] },
+                { x: new Date(2017, 0o3, 27), y: [7, 24] },
+                { x: new Date(2017, 0o3, 28), y: [10, 27] },
+                { x: new Date(2017, 0o3, 29), y: [10, 26] },
+                { x: new Date(2017, 0o3, 30), y: [12, 27] },
+              ],
+            },
+            {
+              type: "rangeArea",
+              showInLegend: true,
+              name: "",
+              markerSize: 0,
+              yValueFormatString: "#0.## °C",
+              dataPoints: [
+                { x: new Date(2017, 0o3, 0o2), y: [16, 30] },
+                { x: new Date(2017, 0o3, 0o1), y: [15, 31] },
+                { x: new Date(2017, 0o3, 0o3), y: [14, 30] },
+                { x: new Date(2017, 0o3, 0o4), y: [15, 30] },
+                { x: new Date(2017, 0o3, 0o5), y: [17, 33] },
+                { x: new Date(2017, 0o3, 0o6), y: [19, 35] },
+                { x: new Date(2017, 0o3, 0o7), y: [20, 30] },
+                { x: new Date(2017, 0o3, 8), y: [15, 31] },
+                { x: new Date(2017, 0o3, 9), y: [16, 32] },
+                { x: new Date(2017, 0o3, 10), y: [16, 33] },
+                { x: new Date(2017, 0o3, 11), y: [16, 35] },
+                { x: new Date(2017, 0o3, 12), y: [17, 36] },
+                { x: new Date(2017, 0o3, 13), y: [20, 32] },
+                { x: new Date(2017, 0o3, 14), y: [17, 35] },
+                { x: new Date(2017, 0o3, 15), y: [18, 36] },
+                { x: new Date(2017, 0o3, 16), y: [20, 34] },
+                { x: new Date(2017, 0o3, 17), y: [17, 30] },
+                { x: new Date(2017, 0o3, 18), y: [19, 29] },
+                { x: new Date(2017, 0o3, 19), y: [16, 32] },
+                { x: new Date(2017, 0o3, 20), y: [17, 33] },
+                { x: new Date(2017, 0o3, 21), y: [16, 35] },
+                { x: new Date(2017, 0o3, 22), y: [19, 36] },
+                { x: new Date(2017, 0o3, 23), y: [20, 36] },
+                { x: new Date(2017, 0o3, 24), y: [21, 37] },
+                { x: new Date(2017, 0o3, 25), y: [21, 38] },
+                { x: new Date(2017, 0o3, 26), y: [21, 39] },
+                { x: new Date(2017, 0o3, 27), y: [22, 39] },
+                { x: new Date(2017, 0o3, 28), y: [22, 39] },
+                { x: new Date(2017, 0o3, 29), y: [22, 41] },
+                { x: new Date(2017, 0o3, 30), y: [23, 42] },
+              ],
+            },
+          ],
+        });
+        chart.render();
+
+        function toggleDataSeries(e) {
+          if (
+            typeof e.dataSeries.visible === "undefined" ||
+            e.dataSeries.visible
+          ) {
+            e.dataSeries.visible = false;
+          } else {
+            e.dataSeries.visible = true;
+          }
+          e.chart.render();
+        }
+      };
+
+      // Slidder Images
+      let slider = document.querySelector(".slider .list");
+      let items = document.querySelectorAll(".slider .list .item");
+      let next = document.getElementById("next");
+      let prev = document.getElementById("prev");
+      let dots = document.querySelectorAll(".slider .dots li");
+
+      let lengthItems = items.length - 1;
+      let active = 0;
+      next.onclick = function () {
+        active = active + 1 <= lengthItems ? active + 1 : 0;
+        reloadSlider();
+      };
+      prev.onclick = function () {
+        active = active - 1 >= 0 ? active - 1 : lengthItems;
+        reloadSlider();
+      };
+      let refreshInterval = setInterval(() => {
+        next.click();
+      }, 3000);
+      function reloadSlider() {
+        slider.style.left = -items[active].offsetLeft + "px";
+        //
+        let last_active_dot = document.querySelector(".slider .dots li.active");
+        last_active_dot.classList.remove("active");
+        dots[active].classList.add("active");
+
+        clearInterval(refreshInterval);
+        refreshInterval = setInterval(() => {
+          next.click();
+        }, 3000);
+      }
+
+      dots.forEach((li, key) => {
+        li.addEventListener("click", () => {
+          active = key;
+          reloadSlider();
+        });
+      });
+      window.onresize = function (event) {
+        reloadSlider();
+      };
+
+      // next Chart ____ AI Predication ____ Ashta
+
+      const xValuesNewAshta = [0, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+      new Chart("myChartThreeAshta", {
+        type: "line",
+        data: {
+          labels: xValuesNewAshta,
+          datasets: [
+            {
+              data: [2, 4, 1, 2, 3, 3, 1, 4, 4, 2, 1, 1],
+              borderColor: "red",
+              fill: false,
+            },
+            {
+              data: [1, 2, 1, 3, 2, 1, 2, 0, 1, 1, 2, 1],
+              borderColor: "green",
+              fill: false,
+            },
+            {
+              data: [0, 1, 0, 0, 1, 3, 1, 1, 0, 1, 0, 1],
+              borderColor: "blue",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: [
+              {
+                ticks: {
+                  min: 0,
+                  max: 10,
+                  stepSize: 1,
+                },
+              },
+            ],
+          },
+          legend: {
+            display: false,
+          },
+        },
+      });
+
+      // Medical Shortage Predication Graph ____ Sangli
+
+      const xValuesFive = [
+        0,
+        "MedicalSuppy",
+        "Medical Equipments",
+        "Staffing Levels",
+        "PPE",
+        "Oxygen Supply",
+        "Blood",
+        "Pharmacetuticals",
+      ];
+      const yValuesFive = [0, 10, 30, 20, 40, 30, 60, 70];
+      const yValuesFiveTwo = [0, 30, 10, 40, 30, 60, 40, 50];
+      const yValuesFiveThree = [0, 50, 45, 60, 20, 50, 40, 100];
+
+      new Chart("myChartFive", {
+        type: "line",
+        data: {
+          labels: xValuesFive,
+          datasets: [
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(0,0,255)",
+              borderColor: "rgba(0,0,255,1)",
+              data: yValuesFive,
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(255,0,0)",
+              borderColor: "rgba(255,0,0,1)",
+              data: yValuesFiveTwo,
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(0,255,0)",
+              borderColor: "rgba(0,255,0,1)",
+              data: yValuesFiveThree,
+            },
+          ],
+        },
+
+        options: {
+          legend: { display: false },
+          scales: {
+            yAxes: [{ ticks: { min: 0, max: 100 } }],
+          },
+        },
+      });
+
+      // Medical Shortage Predication Graph  ____ Ashta
+
+      const xValuesFiveAshta = [
+        0,
+        "MedicalSuppy",
+        "Medical Equipments",
+        "Staffing Levels",
+        "PPE",
+        "Oxygen Supply",
+        "Blood",
+        "Pharmacetuticals",
+      ];
+      const yValuesFiveAshta = [0, 30, 10, 40, 30, 60, 40, 50];
+      const yValuesFiveTwoAshta = [0, 50, 45, 60, 20, 50, 40, 100];
+      const yValuesFiveThreeAshta = [0, 10, 25, 30, 10, 30, 10, 40];
+
+      new Chart("myChartFiveAshta", {
+        type: "line",
+        data: {
+          labels: xValuesFiveAshta,
+          datasets: [
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(0,0,255)",
+              borderColor: "rgba(0,0,255,1)",
+              data: yValuesFiveAshta,
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(255,0,0)",
+              borderColor: "rgba(255,0,0,1)",
+              data: yValuesFiveTwoAshta,
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(0,255,0)",
+              borderColor: "rgba(0,255,0,1)",
+              data: yValuesFiveThreeAshta,
+            },
+          ],
+        },
+
+        options: {
+          legend: { display: false },
+          scales: {
+            yAxes: [{ ticks: { min: 0, max: 100 } }],
+          },
+        },
+      });
+
+      // Changing on the Select Button
+
+      const selectBox = document.getElementById("select-box");
+      selectBox.addEventListener("changed", (e) => {});
+
+      // view Button ::
+
+      const displayvisible = document.querySelector(".progress-data-in-table");
+      const buttonClicked = document.querySelector(".btn-view-details");
+      buttonClicked.addEventListener("click", (e) => {
+        displayvisible.style.display = "inline";
+      });
+      const nextTimeClicked = document.querySelector(".close-btn");
+      nextTimeClicked.addEventListener("click", (e) => {
+        displayvisible.style.display = "none";
+      });
+
+      // View second Btn
+
+      const displayVisTwo = document.querySelector("#progress-data-second");
+      const buttonClickTwo = document.querySelector("#viewMore-btn-second");
+      console.log("button Clicked");
+      buttonClickTwo.addEventListener("click", (e) => {
+        displayVisTwo.style.display = "inline";
+      });
+      const nextTimeClickedTwo = document.querySelector("#close-btn-second");
+      nextTimeClickedTwo.addEventListener("click", (e) => {
+        displayVisTwo.style.display = "none";
+      });
+
+      // view Button :: ___Ashta One
+
+      const displayvisibleAshtaOne =
+        document.querySelector("#ashta-first-table");
+      const buttonClickedAshtaOne = document.querySelector("#ashta-viewInfo");
+      buttonClicked.addEventListener("click", (e) => {
+        displayvisibleAshtaOne.style.display = "inline";
+      });
+      const nextTimeClickedAshtaOne = document.querySelector("#ashta-closeOne");
+      nextTimeClickedAshtaOne.addEventListener("click", (e) => {
+        displayvisibleAshtaOne.style.display = "none";
+      });
+
+      // Changing the Body according to the Select Box Value
+
+      const middleSectionOne = document.querySelector("#middle-section-one");
+      const middleSectionTwo = document.querySelector("#middle-section-two");
+
+      const lastSectionOne = document.querySelector("#last-section-one");
+      const lastSectionTwo = document.querySelector("#last-section-two");
+
+      const selectBoxLocation = document.querySelector("#select-box");
+      selectBox.addEventListener("change", (e) => {
+        let selectedValue = e.target.value;
+        if (selectedValue === "sangli") {
+          middleSectionOne.style.display = "inline";
+          middleSectionTwo.style.display = "none";
+          lastSectionOne.style.display = "inline";
+          lastSectionTwo.style.display = "none";
+        }
+        if (selectedValue === "ashta") {
+          middleSectionOne.style.display = "none";
+          middleSectionTwo.style.display = "inline";
+          lastSectionOne.style.display = "none";
+          lastSectionTwo.style.display = "inline";
+
+          // view Button :: ___Ashta One
+
+          const displayvisibleAshtaOne =
+            document.querySelector("#ashta-first-table");
+          const buttonClickedAshtaOne =
+            document.querySelector("#ashta-viewInfo");
+          buttonClicked.addEventListener("click", (e) => {
+            displayvisibleAshtaOne.style.display = "inline";
+          });
+          const nextTimeClickedAshtaOne =
+            document.querySelector("#ashta-closeOne");
+          nextTimeClickedAshtaOne.addEventListener("click", (e) => {
+            displayvisibleAshtaOne.style.display = "none";
+          });
+        }
+      });
+    </script>
+    <script src="../JavaScript/HomePage.js"></script>
+  </body>
+</html>

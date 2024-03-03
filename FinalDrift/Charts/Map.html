@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="utf-8">
+  <title>ZingSoft Demo</title>
+ 
+  <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  <style></style>
+</head>
+ 
+<body>
+  <div id='myChart'></div>
+  <script>
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    zingchart.loadModules('maps, maps-usa', function(e) {
+      zingchart.render({
+        id: 'myChart',
+        data: {
+          shapes: [{
+            type: 'zingchart.maps',
+            options: {
+              name: 'usa',
+              style: {
+                items: {
+ 
+                  //Northeast:
+                  CT: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  ME: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  MA: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  NH: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  RI: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  VT: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  DE: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  NJ: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  NY: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+                  PA: {
+                    group: 1,
+                    backgroundColor: '#FFCDD2',
+                    hoverState: {
+                      backgroundColor: '#EF9A9A'
+                    }
+                  },
+ 
+                  //Midwest:
+                  IL: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  IN: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  MI: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  OH: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  WI: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  IA: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  KS: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  MN: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  MO: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  NE: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  ND: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+                  SD: {
+                    group: 2,
+                    backgroundColor: '#FFE0B2',
+                    hoverState: {
+                      backgroundColor: '#FFB74D'
+                    }
+                  },
+ 
+                  //South:
+                  FL: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  GA: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  MD: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  NC: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  SC: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  VA: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  DC: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  WV: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  AL: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  KY: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  MS: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  TN: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  AR: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  LA: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  OK: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+                  TX: {
+                    group: 3,
+                    backgroundColor: '#C8E6C9',
+                    hoverState: {
+                      backgroundColor: '#81C784'
+                    }
+                  },
+ 
+                  //West:
+                  AZ: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  CO: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  ID: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  MT: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  NV: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  NM: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  UT: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  WY: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  AK: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  CA: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  HI: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  OR: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  },
+                  WA: {
+                    group: 4,
+                    backgroundColor: '#BBDEFB',
+                    hoverState: {
+                      backgroundColor: '#64B5F6'
+                    }
+                  }
+                },
+                tooltip: {
+                  alpha: 0.5,
+                  backgroundColor: 'white',
+                  borderColor: 'white',
+                  borderRadius: 3,
+                  fontColor: 'black',
+                  fontFamily: 'Georgia',
+                  fontSize: 12,
+                  textAlpha: 1
+                }
+              }
+            }
+          }]
+        },
+        height: 400,
+        width: '100%'
+      });
+    });
+  </script>
+</body>
+ 
+</html>

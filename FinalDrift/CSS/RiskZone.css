@@ -1,0 +1,253 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.view-risk-zone-main-container{
+  background-color: rgba(251, 248, 255, 0.768);
+}
+
+.view-risk-zone-main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.heaing-section-risk-zone{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  padding: 5px;
+  background-color: rgb(4, 11, 111);
+  color: white;
+  width: 70%;
+  margin-left: 270px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(35, 35, 35);
+}
+
+
+
+.map-and-the-guied-section{
+  display: flex;
+  padding: 70px;
+  margin-top: -30px;
+  
+}
+
+.map-section{
+  border: 1px solid black;
+  height: 720px;
+  width: 70%;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgb(101, 101, 101);
+  background-color: rgb(239, 239, 255);
+}
+
+.guied-section{
+  color: white;
+  border-radius: 20px;
+  /* put the chart */
+
+  height: 720px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 10px 10px 10px rgb(85, 84, 84);
+  background-color: rgb(24, 24, 70);
+}
+
+.guied-section-childs-part{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  height: 9.801%;
+  width: 100%;
+  margin-left: 90px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #7aedff66;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  
+}
+td,th{
+ 
+  text-align: center;
+  padding: 5px;
+  height: 70px;
+  font-size: 20px;
+  box-shadow: 7px 7px 7px rgb(96, 96, 96);
+  border-radius: 15px;
+}
+
+th{
+  background-color: rgb(46, 43, 91);
+  color: white;
+  border-radius: 16px;
+
+}
+
+.guied-box{
+  height: 50px;
+  width: 50px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.text-guide{
+  font-size: 25px;
+}
+
+.show-an-pieChart-toShow-Data{
+
+  background-color: rgb(237, 235, 255);
+  height: 51%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#myChart{
+  height: 100%;
+  width: 100%;
+}
+
+.table-section-risk-zone{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.zone-guide-section{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  width: 80%;
+  margin-left: 178px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(74, 5, 71);
+  color: white;
+  box-shadow: 10px 10px 10px rgb(72, 72, 72);
+}
+
+.send-responce-table-section{
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(105, 20, 20);
+  color: white;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(112, 112, 112);
+}
+
+.line-seperating-zone{
+  width: 40%;
+  height: 5px;
+  background-color: rgb(0, 0, 255);
+  margin-top: 40px;
+  margin-left: 550px;
+  margin-bottom: 30px;
+}
+
+#red{
+  background-color: red;
+  border-radius: 7px;
+  border: none;
+}
+
+#orange{
+  background-color: rgb(255, 166, 0);
+  border-radius: 7px;
+  border: none;
+}
+
+#yellow{
+  background-color: yellow;
+  border-radius: 7px;
+  border: none;
+}
+
+#blue{
+  background-color: blue;
+  border-radius: 7px;
+  border: none;
+}
+
+#green{
+  background-color: green;
+  border-radius: 7px;
+  border: none;
+}
+
+
+.color-boxes{
+  
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+ 
+}
+
+.parent-div-th{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-in-th{
+  font-size: 30px;
+  
+}
+
+/* Typing Text Result Showcasing  */
+
+.hero-section-subheading{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+  font-size: 34px;
+  padding: 10px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  background-color: rgb(120, 5, 5);
+  color: white;
+  width: 65%;
+  margin-left: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.map-image{
+  width: 100%;
+  height: 100%;
+}
+
+#map{
+  height: 100%;
+  width: 100%;
+}
